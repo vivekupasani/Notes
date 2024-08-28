@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkPink"
+    tools:context=".ui.Edit">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Edit Notes"
+            android:textColor="@color/lightPink"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/lightPink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/pink_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/Edittitle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/edittext_rounded_background"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center_vertical"
+                android:hint="Title"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:textColor="@color/dWhite"
+                android:textColorHint="@color/dWhite"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <EditText
+                android:id="@+id/EditDescription"
+                android:layout_width="0dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edittext_rounded_background"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="start"
+                android:hint="Description"
+                android:padding="10dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/dWhite"
+                android:textColorHint="@color/dWhite"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/Edittitle"
+                app:layout_constraintStart_toStartOf="@+id/Edittitle"
+                app:layout_constraintTop_toBottomOf="@+id/Edittitle" />
+
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="EDIT"
+                android:textColor="@color/darkPink"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/EditDescription"
+                app:layout_constraintStart_toStartOf="@+id/EditDescription"
+                app:layout_constraintTop_toBottomOf="@+id/EditDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

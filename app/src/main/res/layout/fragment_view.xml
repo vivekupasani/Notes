@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.View">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnBackStack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/chevron_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="288dp"
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/btnBackStack"
+            app:layout_constraintStart_toEndOf="@+id/btnBackStack"
+            app:layout_constraintTop_toTopOf="@+id/btnBackStack"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/trash"
+            app:layout_constraintBottom_toBottomOf="@+id/btnUpdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+            app:layout_constraintTop_toTopOf="@+id/btnUpdate" />
+
+        <TextView
+            android:id="@+id/viewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_vertical"
+            android:hint="MAKE TODO LIST"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/viewDate"
+            app:layout_constraintEnd_toEndOf="@+id/viewTitle"
+            app:layout_constraintStart_toStartOf="@+id/viewTitle"
+            app:layout_constraintTop_toBottomOf="@+id/viewTitle">
+
+            <TextView
+                android:id="@+id/viewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Make Todo list project for users to plan their daily plans\n1)Design ui\n2)Code for 3 hours\n"
+               android:textColor="#555454"
+                android:textSize="25dp" />
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/viewDate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="date"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

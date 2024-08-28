@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517866015887",
+    "project_id": "notes-9d471",
+    "storage_bucket": "notes-9d471.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517866015887:android:30906b9e36d49753e8b4fa",
+        "android_client_info": {
+          "package_name": "com.vivekupasani.todolist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnLeRVFcnZQsWFhhV0gFY_mxIdY4l1q5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
