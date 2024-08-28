@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkPink"
     tools:context=".ui.Home">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
         android:background="@color/white">
 
         <ImageView
@@ -62,16 +60,25 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView3"
             tools:listitem="@layout/each_task_design" />
 
-        <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
+        <androidx.cardview.widget.CardView
             android:id="@+id/btnClickAdd"
             android:layout_width="82dp"
             android:layout_height="82dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="42dp"
-            android:backgroundTint="@color/lightPink"
-            android:gravity="center"
-            android:text="+"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/lightPink"
+            app:cardCornerRadius="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/add"
+                app:tint="@color/white" />
+        </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

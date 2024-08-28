@@ -8,6 +8,11 @@
         <item name="colorSecondary">@color/lightPink</item>
         <item name="colorSecondaryVariant">@color/lightPink</item>
         <item name="colorOnSecondary">@color/lightPink</item>
+
+        <item name="android:statusBarColor">@android:color/holo_green_dark</item>
+
+        <!-- Optional: Light status bar icons and text -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.ToDoList" parent="Base.Theme.ToDoList" />
